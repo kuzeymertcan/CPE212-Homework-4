@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Examples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .submit-button-holder {
+        text-align: center;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Examples</h1>
+    <form action="submit.php" method="GET" target="_blank">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        style="width: 380px"
+        required
+      /><br /><br />
+
+      <label for="email">E-mail Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        style="width: 380px"
+        required
+      /><br /><br />
+
+      <div class="submit-button-holder">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <br />
+
+    <form action="submit.php" method="POST" target="_self">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        style="width: 380px"
+        required
+      /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        style="width: 380px"
+        required
+      /><br /><br />
+
+      <div class="submit-button-holder">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
